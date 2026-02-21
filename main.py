@@ -1,19 +1,15 @@
 import turtle
+from econgrapher import Label, Line
 
 # Initialize the screen and turtle
 screen = turtle.Screen()
 t = turtle.Turtle()
 
-# Position the turtle
-t.penup()
-t.goto(0, 0)
-t.pendown()
+label = Label("Hello Turtle!", (0, 0))
+label.render(t)
 
-# Write text with a designated font
-text_content = "Rendered with Turtle"
-font_configuration = ("Helvetica", 24, "bold")
-
-t.write(text_content, align="center", font=font_configuration)
+line = Line((-30, -30), (30, 30))
+line.render(t)
 
 # Keep the window open until clicked
 screen.exitonclick()

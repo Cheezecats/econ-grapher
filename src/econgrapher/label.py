@@ -22,3 +22,4 @@ class Label(Element):
         turtle.goto(self.x, self.y)
         turtle.pendown()
         turtle.write(self.text, align="center", font=self.font)
+        turtle.penup()
