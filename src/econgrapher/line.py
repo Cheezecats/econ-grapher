@@ -17,6 +17,7 @@ class Line(Element):
     def render(self, turtle: Turtle) -> None:
         turtle.penup()
         turtle.goto(self.sx, self.sy)
+        turtle.pensize(4)
         turtle.pendown()
         turtle.goto(self.ex, self.ey)
         turtle.penup()
