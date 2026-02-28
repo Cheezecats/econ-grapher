@@ -23,7 +23,7 @@ class Tags(Element):
         self.x_dashed = Line(inter, (inter[0], -200), "dashed")
         self.y_dashed = Line(inter, (-200, inter[1]), "dashed")
         self.x_label = Label(f"{axes.x_label.text}_{sub}", (inter[0], -240), font)
-        self.y_label = Label(f"{axes.y_label.text}_{sub}", (-225, inter[1]), font)
+        self.y_label = Label(f"{axes.y_label.text}_{sub}", (-225, inter[1] - 10), font)
 
     def render(self, turtle: Turtle) -> None:
         self.x_dashed.render(turtle)
